@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="800" height="500" fill="#0a0e16"/>
+  <!-- dim X feed backdrop -->
+  <g opacity="0.5">
+    <rect x="40" y="40" width="44" height="44" rx="22" fill="#1c2430"/>
+    <rect x="100" y="48" width="160" height="10" rx="5" fill="#1c2430"/>
+    <rect x="100" y="66" width="300" height="8" rx="4" fill="#161c26"/>
+    <rect x="100" y="98" width="380" height="160" rx="12" fill="#11161f"/>
+    <rect x="40" y="290" width="44" height="44" rx="22" fill="#1c2430"/>
+    <rect x="100" y="298" width="140" height="10" rx="5" fill="#1c2430"/>
+    <rect x="100" y="316" width="320" height="8" rx="4" fill="#161c26"/>
+    <rect x="100" y="344" width="380" height="120" rx="12" fill="#11161f"/>
+  </g>
+  <!-- scraper panel -->
+  <g>
+    <rect x="438" y="40" width="330" height="420" rx="16" fill="#141b2d" stroke="#2a3650" stroke-width="1"/>
+    <!-- header -->
+    <circle cx="468" cy="74" r="11" fill="#1d9bf0"/>
+    <text x="466" y="79" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">𝕏</text>
+    <text x="488" y="79" font-size="15" font-weight="700" fill="#fff">Profile Scraper</text>
+    <!-- stored data card -->
+    <rect x="458" y="100" width="290" height="150" rx="10" fill="#0e1422" stroke="#243049"/>
+    <text x="474" y="124" font-size="10" font-weight="700" letter-spacing="1" fill="#7c8aa6">STORED DATA</text>
+    <rect x="676" y="112" width="56" height="18" rx="9" fill="none" stroke="#ef4444"/>
+    <text x="704" y="125" font-size="9" fill="#ef4444" text-anchor="middle">Clear All</text>
+    <g font-size="11" fill="#c5cee0">
+      <text x="474" y="148">AI Hack</text><text x="732" y="148" fill="#8b97b2" text-anchor="end">46</text>
+      <text x="474" y="167">App Idea</text><text x="732" y="167" fill="#8b97b2" text-anchor="end">128</text>
+      <text x="474" y="186">Marketing Hack</text><text x="732" y="186" fill="#8b97b2" text-anchor="end">35</text>
+      <text x="474" y="205">Profitable App</text><text x="732" y="205" fill="#8b97b2" text-anchor="end">131</text>
+      <text x="474" y="224">Technical</text><text x="732" y="224" fill="#8b97b2" text-anchor="end">104</text>
+    </g>
+    <line x1="474" y1="232" x2="732" y2="232" stroke="#243049"/>
+    <text x="474" y="247" font-size="11" font-weight="700" fill="#fff">Total</text>
+    <text x="732" y="247" font-size="11" font-weight="700" fill="#1d9bf0" text-anchor="end">444 posts</text>
+    <!-- number of posts -->
+    <text x="474" y="276" font-size="10" fill="#7c8aa6">NUMBER OF POSTS</text>
+    <rect x="458" y="284" width="290" height="30" rx="7" fill="#0e1422" stroke="#243049"/>
+    <text x="474" y="304" font-size="12" fill="#c5cee0">50</text>
+    <!-- filters -->
+    <text x="474" y="338" font-size="10" fill="#7c8aa6">FILTERS</text>
+    <g>
+      <rect x="474" y="348" width="14" height="14" rx="3" fill="#1d9bf0"/>
+      <path d="M477 355l3 3 5-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="496" y="360" font-size="11" fill="#c5cee0">English only</text>
+      <rect x="474" y="372" width="14" height="14" rx="3" fill="#1d9bf0"/>
+      <path d="M477 379l3 3 5-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="496" y="384" font-size="11" fill="#c5cee0">Only posts with images</text>
+      <rect x="474" y="396" width="14" height="14" rx="3" fill="#1d9bf0"/>
+      <path d="M477 403l3 3 5-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="496" y="408" font-size="11" fill="#c5cee0">Download media locally</text>
+    </g>
+    <!-- start button -->
+    <rect x="458" y="424" width="290" height="34" rx="9" fill="#1d9bf0"/>
+    <text x="603" y="446" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">Start Scraping</text>
+  </g>
+</svg>

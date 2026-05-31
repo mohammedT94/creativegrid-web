@@ -6,7 +6,6 @@ import {
   lineMask,
   staggerParentSlow,
 } from "../motion/variants.js";
-import heroBg from "../assets/hero-bg.webp";
 import { track } from "../lib/analytics.js";
 
 function Hero({ lang, onOpenContact }) {
@@ -37,34 +36,23 @@ function Hero({ lang, onOpenContact }) {
       id="top"
       className="relative overflow-hidden pt-[max(96px,14vh)] pb-[clamp(120px,18vh,200px)]"
     >
-      {/* Image background — light blur only */}
+      {/* Simple blurred color background */}
       <div
-        className="pointer-events-none absolute inset-0 bg-cover bg-center"
-        aria-hidden
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          filter: "blur(6px) saturate(1.05)",
-          transform: "scale(1.05)",
-        }}
-      />
-
-      {/* Soft fade only at the bottom edge */}
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[35%]"
+        className="pointer-events-none absolute inset-0"
         aria-hidden
         style={{
           background:
-            "linear-gradient(to bottom, transparent 0%, color-mix(in srgb, var(--bg-base) 80%, transparent) 100%)",
+            "radial-gradient(ellipse 80% 60% at 50% 30%, color-mix(in srgb, var(--accent) 10%, var(--bg-base)) 0%, var(--bg-base) 70%)",
         }}
       />
 
-      {/* Subtle backdrop behind text for readability */}
+      {/* Soft fade at the bottom edge */}
       <div
-        className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-[60%]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[25%]"
         aria-hidden
         style={{
           background:
-            "radial-gradient(ellipse at center, color-mix(in srgb, var(--bg-base) 35%, transparent) 0%, transparent 70%)",
+            "linear-gradient(to bottom, transparent 0%, var(--bg-base) 100%)",
         }}
       />
 

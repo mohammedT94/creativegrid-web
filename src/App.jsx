@@ -16,14 +16,14 @@ import {
 const SUPPORTED_LANGS = ["ar", "en", "fr"];
 
 function readInitialLang() {
-  if (typeof window === "undefined") return "ar";
+  if (typeof window === "undefined") return "en";
   try {
     const saved = window.localStorage.getItem("cg-lang");
     if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
     const url = new URLSearchParams(window.location.search).get("lang");
     if (url && SUPPORTED_LANGS.includes(url)) return url;
   } catch {}
-  return "ar";
+  return "en";
 }
 
 function App() {
